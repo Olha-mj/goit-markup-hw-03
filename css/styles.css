@@ -24,8 +24,28 @@ body {
   background-color: var(--page-background-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: o;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
 button {
-  font-family: inherit;
+  /* font-family: inherit; */
 }
 
 button:hover,
@@ -35,6 +55,39 @@ button:focus {
 
 .list {
   list-style: none;
+}
+
+.container {
+  width: 1470px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 156px;
+  padding-left: 156px;
+}
+
+/* ---------------Page Header------------------ */
+
+.page-header {
+  display: flex;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.page-nav {
+  display: flex;
+  align-items: center;
+  column-gap: 70px;
+}
+.menu {
+  display: flex;
+  column-gap: 40px;
 }
 
 .logo {
@@ -73,10 +126,34 @@ button:focus {
   font-style: normal;
 }
 
-.contact-info-item {
+.contact-info-list {
+  display: flex;
+  column-gap: 40px;
+}
+
+.contact-mail,
+.contact-tel {
+  color: var(--body-text-color);
+  font-weight: 400;
+}
+
+.contact-item {
   font-style: normal;
   font-weight: 400;
   color: var(--body-text-color);
+}
+
+/* ----------------Hero Section---------------- */
+
+.hero-container {
+  display: flex;
+  height: 600px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 48px;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero {
@@ -87,6 +164,8 @@ button:focus {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  width: 496px;
+  height: 120px;
   text-align: center;
   color: var(--page-background-color);
 }
@@ -98,6 +177,8 @@ button:focus {
   letter-spacing: 0.04em;
   cursor: pointer;
   color: var(--page-background-color);
+  padding: 16px 32px;
+  min-width: 196px;
 }
 
 .section-title {
@@ -108,6 +189,7 @@ button:focus {
   text-align: center;
   text-transform: capitalize;
   color: var(--hero-color);
+  margin-bottom: 72px;
 }
 
 .description-title {
@@ -116,14 +198,75 @@ button:focus {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--hero-color);
+  text-align: center;
 }
+
+/* ---------Our Advantages Section--------- */
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.our-advantages-list {
+  display: flex;
+  column-gap: 24px;
+  flex-basis: calc(100% - 48px / 3);
+}
+
+/* ---------Our Services Section--------- */
+
+.our-services-container {
+  display: flex;
+}
+
+.our-services-list {
+  display: flex;
+  column-gap: 24px;
+  flex-basis: calc(100% - 48px / 3);
+}
+
+/* --------------Our Team Section------------ */
 
 .our-team-section {
   background-color: var(--light-mode-background-color);
 }
 
+.our-team-list {
+  display: flex;
+  column-gap: 24px;
+  flex-basis: calc(100% - 48px / 3);
+}
+
+.card-text {
+  text-align: center;
+}
+
+.employees-list-img {
+}
+
+.our-team-list-content {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 68px;
+  padding-right: 68px;
+}
+
+.our-team-list-item {
+  border-radius: 0px 0px 4px 4px;
+}
+
 .card {
   background-color: var(--page-background-color);
+}
+
+/* ---------------Footer--------------- */
+
+.footer-container {
+  height: 312px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 101px;
+  column-gap: 12px;
 }
 
 .page-footer {
@@ -132,9 +275,26 @@ button:focus {
 
 .footer-text {
   color: var(--light-mode-background-color);
+  width: 264px;
 }
 
-/* Portfolio Page */
+/*---------------- Portfolio Page-------------- */
+
+.page-header-portfolio {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: var(--subtle-background-color);
+}
+
+/* --------Buttons------ */
+
+.filter-button-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 96px;
+  margin-bottom: 72px;
+  column-gap: 24px;
+}
 
 .filter-button {
   font-weight: 500;
@@ -143,10 +303,51 @@ button:focus {
   letter-spacing: 0.04em;
   color: var(--logo-brand-color);
   background-color: var(--light-mode-background-color);
+  padding: 12px 24px;
+  border: 1px solid var(--subtle-background-color);
+  border-radius: 4px;
+  min-width: 69px;
 }
 
 .filter-button:hover,
 .filter-button:focus {
   cursor: pointer;
   color: var(--page-background-color);
+}
+
+/* ------Cards Section----- */
+
+.projects-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc(100% / 9 - 24px);
+  padding-bottom: 120px;
+}
+
+.project-card {
+  flex-basis: calc(100% / 9 - 24px);
+  margin-right: 24px;
+  margin-bottom: 48px;
+}
+
+.portfolio-card-content {
+  border-bottom: 1px solid var(--subtle-background-color);
+  border-left: 1px solid var(--subtle-background-color);
+  border-right: 1px solid var(--subtle-background-color);
+  padding-top: 32px;
+}
+.portfolio-description-title {
+  text-align: left;
+  margin-left: 16px;
+}
+
+.portfolio-description-text {
+  text-align: left;
+  margin-top: 8px;
+  padding-bottom: 32px;
+  margin-left: 16px;
+}
+
+.portfolio-cards-container {
+  /* padding-bottom: 32px; */
 }
