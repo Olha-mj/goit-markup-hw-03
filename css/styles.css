@@ -111,7 +111,7 @@ button:focus {
 }
 .logo-part-light {
   color: var(--light-mode-background-color);
-  /* display: inline-block; */
+  display: inline-block;
 }
 
 .link {
