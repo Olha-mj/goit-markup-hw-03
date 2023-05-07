@@ -328,13 +328,11 @@ button:focus {
   width: 264px;
 }
 
-.logo-link {
+/* .logo-link {
+  display: inline-block; */
+
+.footer-link {
   display: inline-block;
-
-  .footer-link {
-    display: inline-block;
-  }
-
   margin-bottom: 16px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -342,7 +340,6 @@ button:focus {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--logo-brand-color);
-  /* margin-right: 76px; */
   text-transform: uppercase;
 }
 
