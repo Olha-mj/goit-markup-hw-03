@@ -329,7 +329,6 @@ button:focus {
 }
 
 .logo-footer {
-  display: inline-block;
   margin-bottom: 16px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -339,6 +338,7 @@ button:focus {
   text-transform: uppercase;
   color: var(--logo-brand-color);
   margin-right: 76px;
+  display: inline-block;
 }
 
 /*---------------- Portfolio Page-------------- */
