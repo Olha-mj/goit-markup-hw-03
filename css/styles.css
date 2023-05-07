@@ -103,7 +103,7 @@ button:focus {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-brand-color);
-  /* margin-right: 76px; */
+  margin-right: 76px;
 }
 
 .logo-part-dark {
@@ -336,7 +336,7 @@ button:focus {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--logo-brand-color);
-  /* margin-right: 76px; */
+  margin-right: 76px;
   text-transform: uppercase;
   display: inline-block;
 }
