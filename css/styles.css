@@ -70,6 +70,9 @@ button:focus {
 .page-header {
   display: flex;
   align-items: center;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: var(--subtle-background-color);
 }
 
 .header-container {
@@ -78,6 +81,9 @@ button:focus {
   justify-content: space-between;
   padding-top: 24px;
   padding-bottom: 24px;
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .page-nav {
@@ -87,7 +93,7 @@ button:focus {
 }
 .menu {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
 }
 
 .logo {
@@ -98,6 +104,7 @@ button:focus {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-brand-color);
+  margin-right: 76px;
 }
 
 .logo-part-dark {
@@ -122,13 +129,17 @@ button:focus {
   color: var(--hero-color);
 }
 
+.menu-item {
+  padding: 24px 0 24px;
+}
+
 .contact-info {
   font-style: normal;
 }
 
 .contact-info-list {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
 }
 
 .contact-mail,
@@ -164,7 +175,7 @@ button:focus {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  width: 496px;
+  max-width: 496px;
   height: 120px;
   text-align: center;
   color: var(--page-background-color);
@@ -178,7 +189,10 @@ button:focus {
   cursor: pointer;
   color: var(--page-background-color);
   padding: 16px 32px;
-  min-width: 196px;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
 }
 
 .section-title {
@@ -199,6 +213,7 @@ button:focus {
   letter-spacing: 0.02em;
   color: var(--hero-color);
   text-align: center;
+  margin-bottom: 8px;
 }
 
 /* ---------Our Advantages Section--------- */
@@ -207,34 +222,61 @@ button:focus {
   padding-top: 120px;
   padding-bottom: 120px;
 }
-.our-advantages-list {
-  display: flex;
-  column-gap: 24px;
-  flex-basis: calc(100% - 48px / 3);
+
+.services-section-title {
+  margin-bottom: 72px;
 }
 
-/* ---------Our Services Section--------- */
-
-.our-services-container {
+.our-advantages-section {
+  padding: 188px 0 188px;
+}
+.our-advantages-list {
   display: flex;
+  gap: 24px;
+  flex-basis: calc(100% - 48px / 3);
 }
 
 .our-services-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
+}
+
+.advantages-list-item {
+  width: calc(100% - 72 / 4);
+}
+
+.advantages-title {
+  text-align: left;
+}
+
+/* ---------Our Services Section--------- */
+
+.our-services-list {
+  display: flex;
+  gap: 24px;
   flex-basis: calc(100% - 48px / 3);
 }
 
+.our-services-list-item {
+  width: calc(100% - 48px / 3);
+}
 /* --------------Our Team Section------------ */
 
 .our-team-section {
   background-color: var(--light-mode-background-color);
 }
 
+.ourteam-section-title {
+  margin-bottom: 72px;
+}
 .our-team-list {
   display: flex;
-  column-gap: 24px;
-  flex-basis: calc(100% - 48px / 3);
+  gap: 24px;
+  /* flex-basis: calc(100% - 48px / 3); */
+}
+
+.our-team-list-item {
+  width: calc(100% - 72px / 4);
 }
 
 .card-text {
@@ -247,8 +289,11 @@ button:focus {
 .our-team-list-content {
   padding-top: 32px;
   padding-bottom: 32px;
-  padding-left: 68px;
-  padding-right: 68px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.team-list-title {
 }
 
 .our-team-list-item {
@@ -271,6 +316,7 @@ button:focus {
 
 .page-footer {
   background-color: var(--hero-color);
+  padding: 100px 0;
 }
 
 .footer-text {
@@ -278,22 +324,33 @@ button:focus {
   width: 264px;
 }
 
-/*---------------- Portfolio Page-------------- */
-
-.page-header-portfolio {
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: var(--subtle-background-color);
+.logo-footer {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--logo-brand-color);
+  margin-right: 76px;
 }
 
+/*---------------- Portfolio Page-------------- */
+
 /* --------Buttons------ */
+
+.portfolio-cards-section {
+  padding: 96px 0 120px;
+}
 
 .filter-button-list {
   display: flex;
   justify-content: center;
   margin-top: 96px;
   margin-bottom: 72px;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 .filter-button {
@@ -313,6 +370,7 @@ button:focus {
 .filter-button:focus {
   cursor: pointer;
   color: var(--page-background-color);
+  border: 1px solid transparent;
 }
 
 /* ------Cards Section----- */
@@ -322,19 +380,19 @@ button:focus {
   flex-wrap: wrap;
   flex-basis: calc(100% / 9 - 24px);
   padding-bottom: 120px;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 .project-card {
-  flex-basis: calc(100% / 9 - 24px);
-  margin-right: 24px;
-  margin-bottom: 48px;
+  flex-basis: calc((100% - 48px) / 3);
 }
 
 .portfolio-card-content {
   border-bottom: 1px solid var(--subtle-background-color);
   border-left: 1px solid var(--subtle-background-color);
   border-right: 1px solid var(--subtle-background-color);
-  padding-top: 32px;
+  padding: 32px 16px;
 }
 .portfolio-description-title {
   text-align: left;
@@ -346,8 +404,4 @@ button:focus {
   margin-top: 8px;
   padding-bottom: 32px;
   margin-left: 16px;
-}
-
-.portfolio-cards-container {
-  /* padding-bottom: 32px; */
 }
