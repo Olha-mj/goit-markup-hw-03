@@ -111,7 +111,7 @@ button:focus {
 }
 .logo-part-light {
   color: var(--light-mode-background-color);
-  /* display: inline-block; */
+  display: inline-block;
 }
 
 .link {
@@ -246,7 +246,7 @@ button:focus {
 }
 
 .advantages-list-item {
-  width: calc(100%-72px) / 4;
+  width: calc((100%-72px) / 4);
 }
 
 .advantages-title {
@@ -329,7 +329,7 @@ button:focus {
 }
 
 .logo-footer {
-  display: block;
+  display: inline-block;
   margin-bottom: 16px;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
