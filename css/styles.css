@@ -312,8 +312,8 @@ button:focus {
 
 .footer-container {
   height: 312px;
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
   padding-top: 101px;
   column-gap: 12px;
 }
@@ -327,9 +327,6 @@ button:focus {
   color: var(--light-mode-background-color);
   width: 264px;
 }
-
-/* .logo-link {
-  display: inline-block; */
 
 .footer-link {
   display: inline-block;
