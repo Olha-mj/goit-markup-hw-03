@@ -161,13 +161,10 @@ button:focus {
 
 .hero-container {
   display: flex;
-  height: 600px;
   text-align: center;
   align-items: center;
   flex-direction: column;
   gap: 48px;
-  padding-top: 188px;
-  padding-bottom: 188px;
 }
 
 .hero {
@@ -232,7 +229,6 @@ button:focus {
 }
 
 .our-advantages-section {
-  padding: 120px 0;
 }
 .our-advantages-list {
   display: flex;
@@ -311,16 +307,12 @@ button:focus {
 /* ---------------Footer--------------- */
 
 .footer-container {
-  height: 312px;
-  /* display: flex; */
-  /* flex-direction: column; */
   padding-top: 101px;
   column-gap: 12px;
 }
 
 .page-footer {
   background-color: var(--hero-color);
-  padding: 100px 0;
 }
 
 .footer-text {
@@ -345,13 +337,12 @@ button:focus {
 /* --------Buttons------ */
 
 .portfolio-cards-section {
-  padding: 96px 0 120px;
+  padding-top: 96px;
 }
 
 .filter-button-list {
   display: flex;
   justify-content: center;
-  margin-top: 96px;
   margin-bottom: 72px;
   gap: 24px;
 }
@@ -398,12 +389,9 @@ button:focus {
 }
 .portfolio-description-title {
   text-align: left;
-  margin-left: 16px;
 }
 
 .portfolio-description-text {
   text-align: left;
   margin-top: 8px;
-  padding-bottom: 32px;
-  margin-left: 16px;
 }
