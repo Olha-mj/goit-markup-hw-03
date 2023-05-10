@@ -313,6 +313,7 @@ button:focus {
 
 .page-footer {
   background-color: var(--hero-color);
+  padding: 100px 0;
 }
 
 .footer-text {
@@ -337,7 +338,7 @@ button:focus {
 /* --------Buttons------ */
 
 .portfolio-cards-section {
-  padding-top: 96px;
+  padding: 96px 0 120px;
 }
 
 .filter-button-list {
