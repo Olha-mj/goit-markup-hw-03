@@ -219,16 +219,17 @@ button:focus {
 
 /* ---------Our Advantages Section--------- */
 
-.section {
+/* .section {
   padding-top: 120px;
-  padding-bottom: 120px;
-}
+  padding-bottom: 120px; */
+/* } */
 
 .services-section-title {
   margin-bottom: 72px;
 }
 
 .our-advantages-section {
+  padding-top: 120px;
 }
 .our-advantages-list {
   display: flex;
@@ -262,8 +263,15 @@ button:focus {
 }
 /* --------------Our Team Section------------ */
 
+.our-services-section {
+  margin-top: 120px;
+}
+
 .our-team-section {
   background-color: var(--light-mode-background-color);
+  margin-top: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .ourteam-section-title {
@@ -307,7 +315,6 @@ button:focus {
 /* ---------------Footer--------------- */
 
 .footer-container {
-  padding-top: 101px;
   column-gap: 12px;
 }
 
